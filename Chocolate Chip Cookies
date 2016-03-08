@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<div class="entire-container">
+
+<h1> Chocolate Chip Cookie Recipe</h1>
+<h2> Cookies are Made of Butter and Love</h2>
+<h3> By: Marie Sechuk ~ March 8th 2016</h3>
+ 
+
+<p>
+Chocolate Chip Cookies are drop cookies that feature chocolate chips.  Chocolate chip cookies originated in the United States. variations of this cookies include different types of chocolate, nuts, and oats.  </p>
+
+
+
+
+
+<div class="container straighten">
+    <div id="popup">
+        <div class="marker" id="Chocolate"></div>
+        <div class="marker" id="Flour"></div>
+        <div class="marker" id="Sugar"></div>
+        <div class="marker" id="Eggs"></div>
+        <div class="marker" id="Butter"></div>
+        <div class="marker" id="Vanilla"></div>
+        <div class="marker" id="Salt"></div>
+        <div class="marker" id="Bakingsoda"></div>
+        <div class="marker" id="Brownsugar"></div>
+        <img src="http://www.designmom.com/wp-content/uploads/2012/10/untitled-7825.jpg"  alt="food"/>
+    </div>
+</div>
+
+<div class="textbox">
+    <div class="popuptitle">ChocolateChip Cookies</div>
+   Simple and Easy Recipe for Everyone.<br /> <br />Click on a marker to learn more about each ingredient.
+</div>
+
+
+<p> <span>PREHEAT</span> over to 375 degrees (F).<br /> <br /><span>COMBINE</span> flour, baking soda and salt in small bowl. Beat butter, granulated sugar, brown sugar and vanilla extract in large mixer bowl until creamy. Add eggs, one at a time, beating well after each addition. Gradually beat in flour mixture. Stir in morsels.  Add nuts for additional flavor if desired. Drop by rounded tablespoon onto ungreased baking sheets. <br /><br /><span>BAKE</span> for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely. </p>
+<img src="http://wannacomewith.com/wp-content/uploads/2013/06/chocolate-chip-cookies-9980.jpg" alt= "drugs"/>
+
+</div><!--entire-container-->
+<style>
+.container{
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+.textbox {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    font-family: 'Neuton', serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.container img {    
+    width: 100%;
+}
+.marker{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.marker:hover {
+    background-color: white;
+}
+
+#Chocolate {
+    top:16%;
+    left: 79%;
+}
+#Flour {
+    top:66%;
+    left: 11%;
+}
+#Sugar {
+    top: 66%;
+    right: 36%;
+}
+#Eggs{
+	top: 17%;
+	right:47%;
+}
+#Butter{
+	top: 60%;
+	right:05%;
+}
+#Vanilla{
+	top: 63%;
+	right:54%;
+}
+#Salt{
+	top: 43%;
+	right:67%;
+}
+#Bakingsoda{
+	top: 82%;
+	right:15%;
+}
+#Brownsugar{
+	top: 13%;
+	right:78%;
+}
+.straighten:after{
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
+#popup {
+    position:relative;
+}
+.hoverbox {
+    position:absolute; 
+    padding:0.5em; 
+    background:#FFF; 
+    box-shadow:1px 1px 8px rgba(0,0,0,.4); 
+    z-index:300; 
+    font-family:'Neuton', serif;
+    line-height:1.3em; 
+    min-width:100px; 
+    max-width:200px;
+}
+.popuptitle {
+    color: #8B4513;
+    font-family: 'Neuton', serif;
+    letter-spacing: 0.01em;
+    font-size:23px; 
+    font-weight:700;
+    clear:both;
+}
+
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 44px;
+	text-align: center;
+	color:#8B4513;
+}
+h2 {
+	font-family: 'Sacramento', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+h4 {
+	font-family: Times, serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+p {
+	font-family: 'Neuton', serif;
+	font-size:40;
+}
+img{ 
+	display:block;
+    margin:0 auto;
+  }
+.entire-container{
+	margin:0 auto;
+	width:65%
+}
+p span {
+	color:#8B4513;
+	font-size:18px;
+	font-weight: bold;
+	font:'Neuton', serif;
+}
+img.resize{
+    width:540px;
+    height: auto;
+}
+hr {
+	border: 0;
+	width: 80%;
+}
+</style>
+
+<script>
+$(document).ready(function() {
+
+var data = 
+[{"id":"Chocolate","name":"Chocolate", "description":"2 cups chocolate."},
+{"id":"Flour","name":"Flour", "description":"2 1/4 cups all-purpose flour."},
+{"id":"Sugar","name":"Sugar", "description":"3/4 cup sugar."},
+{"id":"Eggs","name":"Eggs", "description":"2 large eggs."},
+{"id":"Butter","name":"Butter", "description":"1 cup (2 sticks) butter."},
+{"id":"Vanilla","name":"Vanilla", "description":"1 teaspoon vanilla extract."},
+{"id":"Salt","name":"Salt", "description":"1 teaspoon salt."},
+{"id":"Bakingsoda","name":"Baking soda", "description":"1 teaspoon baking soda."},
+{"id":"Brownsugar","name":"Brown sugar", "description":"3/4 cups packed brown sugar."}];
+
+$(".marker").click(function(){
+    $('.textbox').empty();
+    for (var i=0; i<data.length; i++) {
+    if (this.id == data[i].id) {
+        $(".textbox").append('<div class="popuptitle">'+data[i].name+'</div>' + data[i].description);
+    } 
+    } 
+});
+
+
+var pos, thex, they;
+
+$(".marker").mouseover(function(e){
+    $(".hoverbox").remove();
+
+    // POSITIONING THE POP UP
+    if (navigator.userAgent.indexOf("Firefox")!=-1){
+        
+        pos = $("#popup").offset()
+        thex = e.pageX - pos.left + 10;
+        they = e.pageY - pos.top + 0;
+        if (thex > $("#popup").width() - 150) { thex = $("#popup").width() - 150 };
+        if (they > $("#popup").height() - 100) { they = $("#popup").height() - 100 };
+    } else {
+
+        pos = $("#popup").offset()
+        thex = event.pageX - pos.left + 10;
+        they = event.pageY - pos.top + 0;
+        if (thex > $("#popup").width() - 150) { thex = $("#popup").width() - 150 };
+        if (they > $("#popup").height() - 100) { they = $("#popup").height() - 100 };
+    }
+
+    // APPENDING TEXT TO THE POP UP
+    for (var i=0; i<data.length; i++) {
+    if (this.id == data[i].id) {
+    $("#popup").append('<div class="hoverbox" style="top:'+they+'px; left:'+thex+'px;"><div class="popuptitle">'+data[i].name+'</div></div>');
+    } 
+    
+
+    }   
+});
+
+$(".marker").mouseleave(function(){
+    $(".hoverbox").remove();
+});
+
+
+});//doc ready
+</script>
+
+<a href= "http://www.designmom.com/wp-content/uploads/2012/10/untitled-7825.jpg"> Source: Ingregients and cookie</a>
+
+
+</body>
+</html>
+
+
+
+
